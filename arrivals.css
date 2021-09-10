@@ -1,0 +1,281 @@
+@import url('./header-footer.css');
+
+.header{
+    padding: 0 0 24px;
+    background:none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+.navigation{
+    width: 95%;
+}
+
+
+main{
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: baseline;
+}
+
+.left-side{
+    flex-basis: 20%;
+}
+
+.brand{
+    padding: 30px 0;
+}
+
+.brand h2{
+    color: #000000;
+    line-height: 24px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    font-weight: normal;
+}
+
+.brand-list li{
+    margin-bottom: 14px;
+}
+.brand-list li input{
+    margin-right: 12px; 
+    
+}
+
+label{
+    text-transform: capitalize;
+    color: rgba(0, 0, 0, 0.65);
+    font-weight: 18px;
+}
+
+input[type=checkbox]{
+    appearance: none;
+    background-color: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    width: 16px;
+    height: 16px;
+    border-radius: 5px;
+    position: relative;
+}
+
+.brand-list .uil-check{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+
+input[type=checkbox]:checked::after{
+    content: url('./check.svg');
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    width: 18px;
+    height: 18px;
+
+}
+
+
+.price-range{
+    width: 100%;
+    border-top: 1px solid rgba(0, 0, 0, 0.15);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+.price-range h2{
+    text-align: center;
+    color: #000000;
+    line-height: 24px;
+    text-transform: capitalize;
+    margin: 32px 0 16px;
+    font-weight: normal;
+
+}
+
+
+
+
+
+
+
+
+.size{
+    padding-top: 32px;
+}
+.size h3{
+    margin-bottom: 18px;
+    margin-left: 10px;
+    color: #000000;
+    font-weight: normal;
+    line-height: 24px;
+    text-transform: capitalize;
+
+
+}
+
+.size-btns button{
+    color: rgba(0, 0, 0, 0.65);
+    font-size: 16px;
+    line-height: 24px;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+    padding: 12px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.btn-active{
+    background-color: #D90429;
+    color: #ffffff !important;
+}
+
+.ui-slider{
+    border: 1px solid rgba(0, 0, 0, 0.15) !important;
+    /* border: none !important; */
+    height: 4px !important;
+}
+
+
+
+
+.ui-slider-handle{
+    width: 12px !important;
+    height: 12px !important;
+    border-radius: 50% !important;
+    background: #000000 !important;
+    top: -0.3em !important;
+}
+
+.ui-slider-handle:focus{
+    border-radius: 50% !important;
+    width: 12px !important;
+    height: 12px !important;
+}
+
+.ui-slider-handle:hover{
+    border-radius: 50% !important;
+}
+
+.ui-slider-range{
+    background-color: #000000 !important;
+    color: #000000 !important;
+}
+
+.price-input{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0 30px;
+
+}
+
+.price-input input{
+    width: 30%;
+    text-align: center;
+    outline: none;
+    border: none;
+    font-size: 18px;
+    line-height: 22px;
+    color: #000000;
+}
+
+.price-filter{
+    cursor: pointer;
+    color: #ffffff;
+    background-color: #D90429;
+    padding: 10px 15px;
+    font-size: 14px;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+}
+
+.right-side{
+    margin-left: 64px;
+    flex-basis: 75%;
+}
+
+.right-side > h2{
+    font-weight: bold;
+    line-height: 32px;
+    color: #000000;
+    margin-bottom: 32px;
+
+}
+
+.right-side-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.right-side-content > .content{
+    width: 32%;
+    margin-bottom: 65px;
+}
+.right-side-content > .content > .img{
+    background: rgba(0, 0, 0, 0.04);
+    width: 100%;
+    position: relative;
+    z-index: -12;
+}
+
+.right-side-content .content:hover h2{
+    color: #D90429;
+
+}
+
+.right-side-content > .content > .img img{
+    width: 100%;
+}
+
+.right-side-content > .content h2{
+    font-size: 18px;
+    line-height: 24px;
+    color: #000000;
+    margin: 25px 0 10px;
+}
+
+.right-side-content > .content h3{
+    color: rgba(0, 0, 0, 0.65);
+    margin-bottom: 25px;
+}
+
+.right-side-content > .content:hover .hover{
+visibility: visible;
+}
+
+
+
+footer{
+    display: flex;
+    justify-content: flex-end;
+    
+}
+
+.footer-content{
+    border-top: 1px solid rgba(0, 0, 0, 0.15);
+    width: 70%;
+    margin-right: 30px;
+    padding: 32px 0 65px;
+}
+
+
+.footer-content div{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.social-icons{
+    margin-left: 14px;
+}
+
+
+
+
+
+
+
+

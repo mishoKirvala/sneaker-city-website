@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Baskervville&family=Open+Sans&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: open sans;
+}
+
+
+.header{
+    background: linear-gradient(90deg, #FDFBFB 0%, #EBEDEE 100%);
+    position: relative;
+}
+
+.navigation{
+   margin: 0 auto;
+   padding: 25px 0 0;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav{
+    flex-basis: 35%;
+}
+.nav-list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-list a{
+    text-transform: capitalize;
+    color: #000000;
+    line-height: 24px;
+}
+
+.nav-list a:hover{
+    color: #D90429;
+}
+
+.user-nav{
+    flex-basis: 12%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.user-nav i{
+    font-size: 27px;
+    color: #000000;
+}
+.user-nav i:hover{
+    color: #D90429;
+}
+
+
+.bottom-footer span{
+    color: rgba(0, 0, 0, 0.65);
+    line-height: 24px;
+}
+
+
+.social-icons i{
+    margin-right: 10px;
+    font-size: 18px;
+    background: rgba(0, 0, 0, 0.04);
+    border-radius: 8px;
+    padding: 8px 10px;
+    color:#EF233C;
+}
+
+
+.social-icons i:hover{
+    background-color: #EF233C;
+    color: #FFFFFF;
+}
+
+.tel a{
+    color: #EF233C;
+}
+
+
+

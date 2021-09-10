@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Details</title>
+    <link rel="stylesheet" href="./details.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="navigation">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="./img/logo.png" alt="">
+                </a>
+            </div>  <!--logo-->
+
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="arrivals.html">new arrivals</a></li>
+                    <li><a href="arrivals.html">men</a></li>
+                    <li><a href="arrivals.html">women</a></li>
+                    <li><a href="arrivals.html">kids</a></li>
+                </ul>
+
+            </nav> <!--nav list-->
+
+            <div class="user-nav">
+                <a href="#"><i class="uil uil-shopping-cart"></i></a>
+                <a href="#"><i class="uil uil-heart"></i></a>
+                <a href="#"><i class="uil uil-user"></i></a>
+
+            </div>
+
+
+        </div>  <!--navigation-->
+
+    </header>
+
+
+    <main>
+        <div class="left-side">
+            <div class="top">
+                <div class="left-top">
+                    <h2>Jordan Delata 2</h2>
+                    <h3>70 $</h3>
+                </div>
+                <div class="heart">
+                    <a href="#"><i class="uil uil-heart"></i></a>
+                </div>
+                
+            </div><!--top-->
+
+            <img src="./img/details-img/Rectangle 86.png" alt="">
+
+            <div class="slider-img">
+                <a href="#">
+                <div class="img img-active">
+                    <img src="./img/details-img/Rectangle 82.png" alt="">
+                </div></a>
+                <a href="#">
+                <div class="img">
+                    <img src="./img/details-img/Rectangle 83.png" alt="">
+                </div></a>
+                <a href="#">
+                <div class="img">
+                    <img src="./img/details-img/Rectangle 84.png" alt="">
+                </div></a>
+                <a href="#">
+                <div class="img">
+                    <img src="./img/details-img/Rectangle 85.png" alt="">
+                </div></a>
+                
+            </div>
+
+        </div><!--left side-->
+
+        <div class="right-side">
+            <div class="description">
+                <h3>Description</h3>
+                <p>The Jordan Delta 2 offers a fresh, fearless take on the
+                    features you want: durability, comfort and an attitude
+                    that's Jordan to the core. We updated design lines and
+                    swapped out some components. The 2 still has that clashing
+                    combination of supportive and space age-like materials,
+                    with lots of different textures and heavy stitching to
+                    create a look that's both adventurous and iconic.
+                </p>
+            </div><!--description-->
+
+            <div class="size">
+                <h3>select size</h3>
+
+                <div class="size-btns" id="btn">
+                    <button class="btn">32</button>
+                    <button class="btn">33</button>
+                    <button class="btn">34</button>
+                    <button class="btn">35</button>
+                    <button class="btn">36</button>
+                    <button class="btn">37</button>
+                    <button class="btn">38</button>
+                    <button class="btn">39</button>
+                    <button class="btn">40</button>
+                    <button class="btn">41</button>
+                    <button class="btn">42</button>
+                    <button class="btn">43</button>
+                    <button class="btn">44</button>
+                    <button class="btn">45</button>
+                </div>
+
+            </div><!--size-->
+
+            <div class="cart">
+                <button class="minus" id="minus">-</button>
+                <input type="number" readonly class="number" id="number" value="1" min="1" max="50">
+                <button class="plus" id="plus">+</button>
+
+                <a href="#">Add to cart</a>
+            </div>
+
+
+
+        </div><!--right side-->
+
+    
+
+    </main>
+    
+
+    <script>
+
+        $(".btn").click(function () {
+            clicked = true;
+            if (clicked) {
+                $(this).toggleClass('btn-active');
+                clicked = true;
+            } else {
+                $(this).removeClass('btn-active');
+                clicked = false;
+            }
+            }); // size button script
+
+
+            var number = $('#number').val();
+
+            $('#minus').click(function(){
+                number--;
+                if(number < 0){
+                    number = 0
+                }
+                $('#number').val(number)
+            })
+
+            $('#plus').click(function(){
+
+                number++;
+
+                if(number > 50){
+                    number = 50
+                }
+                $('#number').val(number)
+            })
+    </script>
+</body>
+</html>
