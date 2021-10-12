@@ -213,20 +213,6 @@
     </footer>
 
 
-    
-    
-       
-     
-
-      
-
-
-
-
-
-
-
-
 
 
 
@@ -252,21 +238,15 @@
             
         } );   // price range slider script
 
-
-
         
-        $(".btn").click(function () {
-            clicked = true;
-            if (clicked) {
-                $(this).toggleClass('btn-active');
-                clicked = true;
-            } else {
-                $(this).removeClass('btn-active');
-                clicked = false;
-            }
-            }); // size button script
-
-
+        
+        var btn = document.querySelectorAll('.btn');
+        
+        btn.forEach(function(item){
+            item.addEventListener('click', function(){
+                item.classList.toggle('btn-active')
+            })
+        })  // size button script
 
 
 
