@@ -136,24 +136,20 @@
 
     <script>
 
-        $(".btn").click(function () {
-            clicked = true;
-            if (clicked) {
-                $(this).toggleClass('btn-active');
-                clicked = true;
-            } else {
-                $(this).removeClass('btn-active');
-                clicked = false;
-            }
-            }); // size button script
+        var btn = document.querySelectorAll('.btn');
+        btn.forEach(function(item){
+        item.addEventListener('click', function(){
+            item.classList.toggle('btn-active')
+            })
+        })
 
 
             var number = $('#number').val();
 
             $('#minus').click(function(){
                 number--;
-                if(number < 0){
-                    number = 0
+                if(number < 1){
+                    number = 1
                 }
                 $('#number').val(number)
             })
